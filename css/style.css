@@ -285,4 +285,63 @@ a {
 
 .input-group .btn {
     margin: 4px;
+    box-shadow: 0 20px 10px;
+    color: #f3f3f3;
+}
+
+
+/* Cards */
+
+.card {
+    border-radius: 7px;
+}
+
+
+/* Plans */
+
+
+
+.plan--popular .card__header {
+    position: relative;
+}
+
+.plan--popular .card__header::before {
+    content: url(../images/special.svg);
+    width: 40px;
+    display: inline-block;
+    position: absolute;
+    top: -6px;
+    right: 5%;
+}
+
+@media screen and (min-width:1024px) {
+    .plan__name {
+        font-size: 1.4rem;
+    }
+
+    .plan__price {
+        font-size: 5rem;
+    }
+
+    .plan__biling-cycle {
+        font-size: 1.6rem;
+    }
+}
+
+/* Media */
+
+.media {
+    display: flex;
+}
+
+.media__title {
+    margin-top: 0;
+}
+
+.media__body {
+    margin: 0 2rem;
+}
+
+.media__image {
+    margin-top: 1rem;
 }
